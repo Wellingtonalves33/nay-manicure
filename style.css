@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+a {
+   
+    color: white;
+    font-size: 25px;
+    margin: 20px;
+    margin-top: 100px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-top: 100px;
+    text-decoration: none;
+}
+  
+header{
+    background-color: #9b7cac;
+    width:  100vw;
+    height: 6vh;
+}
+
+video{
+  
+    height: 29vw;
+    width: 41vw;
+    margin: 75px;
+   
+}
+
+img {
+  
+    width: 29vw;
+    height: auto;
+    margin: 84px;
+    padding: 15px;
+    border-radius: 100px;
+
+}
+
+.fotos-log0-vide0 {
+    padding: 13px;
+}
+.principal {
+    font-family: "Caveat", cursive;
+    font-size: 300px;
+    color: white;
+    top: 10px;
+    background-color: #9b7cac;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    left: 0;
+
+}
+.final-pg{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+a:hover{
+    color: #000000;
+    font-size: 26px;
+    transition: 0.6s ease-in-out;
+}
+@media (max-width:1025px){
+    a{
+        font-size: 18px;
+    }
+    video {
+        height: 59vw;
+        width: 73vw;
+        margin: 52px;}
+        img {
+            width: 99vw;
+            height: 46vh;
+        margin: 0;
+    padding: 0;
+    border-radius:0;
+    }
+    .principal{
+        font-size: 36px;
+    }
+            
+}
