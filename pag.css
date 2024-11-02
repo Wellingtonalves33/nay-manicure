@@ -51,3 +51,7 @@ div img:hover{
     filter: grayscale(1);
     transform: scale(1.03);
 }
+main{
+    min-height: 600px;
+    padding: 0 50px;
+}

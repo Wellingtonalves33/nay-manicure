@@ -8,86 +8,462 @@
 body {
     width: 100vw;
     height: 100vh;
-  }
-
-a {
-   
-    color: white;
-    font-size: 25px;
-    margin: 20px;
-    margin-top: 100px;
-    font-weight: bold;
-    cursor: pointer;
-    padding-top: 100px;
-    text-decoration: none;
-}
-  
-header{
-    background-color: #9b7cac;
-    width:  100vw;
-    height: 6vh;
-}
-
-video{
-  
-    height: 29vw;
-    width: 41vw;
-    margin: 75px;
-   
-}
-
-img {
-  
-    width: 29vw;
-    height: auto;
-    margin: 84px;
-    padding: 15px;
-    border-radius: 100px;
 
 }
 
-.fotos-log0-vide0 {
-    padding: 13px;
+header {
+    background-color: gray;
+    padding: 0.2rem;
+    height: 4.8rem;
+    display: grid;
+    align-items: center;
 }
-.principal {
-    font-family: "Caveat", cursive;
-    font-size: 300px;
-    color: white;
-    top: 10px;
-    background-color: #9b7cac;
-    text-align: center;
-    font-size: 55px;
-    font-weight: bold;
-    left: 0;
 
-}
-.final-pg{
+.caixa-video {
     position: fixed;
-    bottom: 0;
-    width: 100vw;
+    z-index: -1;
+    top: 0;
 }
-a:hover{
-    color: #000000;
-    font-size: 26px;
-    transition: 0.6s ease-in-out;
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
 }
-@media (max-width:1025px){
-    a{
+
+.container-header {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10px;
+    margin: 0;
+}
+
+.div-log {
+    display: flex;
+    margin: 0 10px;
+}
+
+.div-log a {
+    color: #000;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.05em;
+    padding: 0 20px 5px 0;
+}
+
+.div-logo-img {
+    width: 80px;
+}
+
+.div-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 5px;
+}
+
+.button-list {
+    background-color: #9b7cac;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-list:hover {
+    opacity: 0.8;
+    color: #2d3748;
+}
+
+.button-list:active {
+    opacity: 0.5;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 16px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #ffffffb3;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.menu-link:hover {
+    color: white;
+    transition-duration: 400ms;
+    font-size: 25px;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(8deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 100%, rgba(10, 12, 16, 0.99) 100%);
+    position: fixed;
+    top: 0;
+}
+
+main {
+    min-height: 600px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container-home {
+    margin: 0 auto;
+    padding: 48px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+
+}
+
+.span-h1-home {
+    font-family: "Caveat", cursive;
+    font-size: 48px;
+    padding: 20px;
+}
+
+
+.h1-text-home {
+    font-size: 76px;
+    font-weight: bold;
+
+}
+
+.h3-texto-home {
+    padding: 30px;
+
+}
+
+.button-home {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    cursor: pointer;
+    background-color: #9b7cac;
+    color: #ffffffb3;
+    text-align: center;
+    display: inline-block;
+
+
+    &:hover {
+        opacity: 0.8;
+        color: #2d3748;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.img-home {
+    width: 380px;
+    border-radius: 20px;
+ 
+
+}
+.image-card{
+    border-radius: 20px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    transform: translateY(-40px);
+    transition: transform 0.3s ease, scale 0.3s ease;
+}
+.sectio-serv{
+    margin: 0 auto;
+    padding: 40px 48px;
+    min-height: 600px;
+  
+}
+.container-serv{
+    text-align: center;
+    margin: 0 auto 80px;
+    padding: 0 48px;
+}
+.titolo-do-serv{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #89ABB4;
+}
+.div-cad{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 65px;
+    place-items: center;
+
+}
+.serv-card{
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transition: all 0.5s ease;
+    max-width: 300px;
+    position: relative;
+
+
+    &:hover{
+        background-color: #9b7cac;
+        color: #2d3748;
+    }
+}
+.serv-card:hover .image-card{
+    transform: translateY(-40px) scale(1.06) rotate(4deg) ;
+}
+.div-texto-servico-card{
+    padding: 16px;
+    text-align: center;
+}
+.h1-card-serv{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.p-card-serv{
+    color: #89ABB4;
+    transition: all 0.7 ease;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin: 16px;
+}
+.serv-card:hover .p-card-serv{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1172px) {
+    .div-log a {
+        font-size: 25px;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .h1-text-home {
+        font-size: 40px;
+    }
+
+    .span-h1-home {
+        font-size: 28px;
+    }
+
+    .img-home {
+        width: 320px;
+    }
+    
+    .div-cad{
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        gap: 65px;
+        place-items: center;
+    }
+
+.titolo-do-serv{
+    font-size: 35px;
+}
+    
+}
+
+@media screen and (max-width: 876px) {
+    .div-log a {
+        font-size: 24px;
+    }
+
+    .button-list {
         font-size: 18px;
     }
-    video {
-        height: 59vw;
-        width: 73vw;
-        margin: 52px;}
-        img {
-            width: 99vw;
-            height: 46vh;
-        margin: 0;
-    padding: 0;
-    border-radius:0;
+
+    .h1-text-home {
+        font-size: 20px;
     }
-    .principal{
-        font-size: 36px;
+
+    .span-h1-home {
+        font-size: 32px;
     }
-            
+
+    .grid {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-home {
+        width: 280px;
+
+    }
+    .titolo-do-serv{
+        font-size: 30px;
+   }
+} 
+@media screen and (max-width: 777px) {
+    .titolo-do-serv{
+        font-size: 25px;
+   }
+}
+@media screen and (max-width: 679px) {
+    .titolo-do-serv{
+        font-size: 23px;
+   }
+}
+@media screen and (max-width: 643px) {
+    header {
+        padding: 0;
+    }
+
+    .div-log a {
+        font-size: 22px;
+    }
+
+    .button-list {
+        font-size: 16px;
+    }
+    .div-logo-img {
+        width: 70px;
+    }
+    .div-cad{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 65px; 
+    }
+}
+
+@media screen and (max-width: 566px) {
+    .div-log a {
+        font-size: 18px;
+
+    }
+
+    .button-list {
+        font-size: 13px;
+    }
+    .div-logo-img {
+        width: 60px;
+    }
+}
+@media screen and (max-width: 499px) {
+    .div-log a {
+        font-size: 12px;
+
+    }
+
+    .button-list {
+        font-size: 10px;
+    }
+    .div-logo-img {
+        width: 52px;
+    }
+}
+
+@media screen and (max-width: 398px) {
+    .div-log a {
+        font-size: 15px;
+
+    }
+
+    .button-list {
+        font-size: 8px;
+    }
+    .titolo-do-serv{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 376px) {
+    .div-log a {
+        font-size: 12px;
+
+    }
+
+    .button-list {
+        font-size: 8px;
+    }
+    .titolo-do-serv{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 361px) {
+    .div-log a {
+        font-size: 12px;
+
+    }
+
+    .button-list {
+        font-size: 7px;
+    }
+    
+.titolo-do-serv{
+    font-size: 16px;
+}
+}
+@media screen and (max-width: 163px) {
+    .div-log a {
+        font-size: 4px;
+
+    }
+
+    .button-list {
+        font-size: 1px;
+    }
+    .img-home {
+        width: 120px;
+
+    }
+    .div-logo-img {
+        width: 10px;
+    }
+    .h1-text-home {
+        font-size: 1px;
+      
+    
+    }
+    
+    .h3-texto-home {
+        padding: 10px;
+    
+    }
 }
