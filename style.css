@@ -61,7 +61,7 @@ video {
 }
 
 .div-logo-img {
-    width: 80px;
+    width: 99px;
 }
 
 .div-list {
@@ -276,11 +276,32 @@ main {
 .map-iframe{
     width:700px;
     height: 350px;
+    position: relative;
+    bottom: 20px;
 }
+footer{
+    background-color: gray;
+    min-height: 150px;
+    padding: 5px;
+    
+    
+}
+.div-log-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-logo{
+    width: 50px;
+ 
 
-
-
-
+}
+.div-log-filho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -459,6 +480,9 @@ main {
     }
     #principal{
         font-size: 30px;
+    }
+    #name-footer{
+        font-size: 13px;
     }
     
 }
