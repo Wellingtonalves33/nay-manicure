@@ -63,7 +63,27 @@ video {
 .div-logo-img {
     width: 99px;
 }
+.image-carrosel{
+    height: 20vw;
+    width: 40vh;
+    border-radius: 20px;
+    
+}
+#carouselExampleControls{
+    background-color: transparent;
+    left: 30px;
+    
+   
 
+}
+.titulo-carrossel{
+    color: #89ABB4;
+    font-size: 30px;  
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 .div-list {
     display: flex;
     justify-content: center;
