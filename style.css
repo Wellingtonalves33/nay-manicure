@@ -13,8 +13,8 @@ body {
 
 header {
     background-color: gray;
-    padding: 0.2rem;
-    height: 4.8rem;
+    padding: 9px;
+    height: 72px;
     display: grid;
     align-items: center;
 }
@@ -135,7 +135,7 @@ main {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:  1fr 1fr;
     align-items: center;
     text-align: center;
 
@@ -197,8 +197,8 @@ main {
 .sectio-serv{
     margin: 0 auto;
     padding: 40px 48px;
-    min-height: 600px;
-  
+    min-height: 500px;
+
 }
 .container-serv{
     text-align: center;
@@ -255,10 +255,28 @@ main {
 .serv-card:hover .p-card-serv{
     color: #fff;
 }
+.container-nav{
+   display: grid;
+   grid-template-columns: 1fr; 
+   align-items: center;
+   text-align: center;
 
-
-
-
+}
+.meu-endereço{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column-reverse;
+    gap: 50px;
+}
+.h1-texto-endereço{
+    font-size: 35px;
+    color: #fff;
+}
+.map-iframe{
+    width:700px;
+    height: 350px;
+}
 
 
 
@@ -385,6 +403,16 @@ main {
     .div-logo-img {
         width: 60px;
     }
+    .map-iframe{
+        width:310px;
+        height: 280px;
+    }
+    .h1-texto-endereço{
+        font-size: 30px;
+    }
+    #principal{
+        font-size: 35px;
+    }
 }
 @media screen and (max-width: 499px) {
     .div-log a {
@@ -397,6 +425,16 @@ main {
     }
     .div-logo-img {
         width: 52px;
+    }
+    .map-iframe{
+        width:310px;
+        height: 280px;
+    }
+    .h1-texto-endereço{
+        font-size: 30px;
+    }
+    #principal{
+        font-size: 35px;
     }
 }
 
@@ -412,6 +450,17 @@ main {
     .titolo-do-serv{
         font-size: 19px;
     }
+    .map-iframe{
+        width:290px;
+        height: 280px;
+    }
+    .h1-texto-endereço{
+        font-size: 25px;
+    }
+    #principal{
+        font-size: 30px;
+    }
+    
 }
 @media screen and (max-width: 376px) {
     .div-log a {
@@ -425,6 +474,18 @@ main {
     .titolo-do-serv{
         font-size: 17px;
     }
+    .map-iframe{
+        width:290px;
+        height: 280px;
+    }
+    .h1-texto-endereço{
+        font-size: 25px;
+    }
+    #principal{
+        font-size: 30px;
+    }
+    
+
 }
 @media screen and (max-width: 361px) {
     .div-log a {
@@ -439,6 +500,17 @@ main {
 .titolo-do-serv{
     font-size: 16px;
 }
+.map-iframe{
+    width:290px;
+    height: 280px;
+}
+.h1-texto-endereço{
+    font-size: 25px;
+}
+#principal{
+    font-size: 30px;
+}
+
 }
 @media screen and (max-width: 163px) {
     .div-log a {
