@@ -16,7 +16,7 @@ header {
     padding: 9px;
     height: 72px;
     display: grid;
-    align-items: center;
+    align-items: center;   
 }
 
 .caixa-video {
@@ -63,27 +63,35 @@ video {
 .div-logo-img {
     width: 99px;
 }
-.image-carrosel{
-    height: 20vw;
-    width: 40vh;
-    border-radius: 20px;
-    
+
+.image-carrosel {
+    height: 30vw;
+    width: 70vh;
+
+    border-radius: 35px;
+   padding: 20px;
 }
-#carouselExampleControls{
-    background-color: transparent;
-    left: 30px;
-    
-   
+
+.carousel-item {
+    left: 33%;
 
 }
-.titulo-carrossel{
+
+#carouselExampleControls {
+    background-color: transparent;
+    padding: 20px;
+  
+}
+
+.titulo-carrossel {
     color: #89ABB4;
-    font-size: 30px;  
+    font-size: 30px;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
+
 .div-list {
     display: flex;
     justify-content: center;
@@ -138,7 +146,20 @@ video {
     position: fixed;
     top: 0;
 }
-
+.posicionado{
+ 
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 3;
+   
+}
+.agendamento{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 3;
+}
 main {
     min-height: 600px;
     padding: 0 50px;
@@ -155,7 +176,7 @@ main {
 
 .grid {
     display: grid;
-    grid-template-columns:  1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     text-align: center;
 
@@ -203,10 +224,11 @@ main {
 .img-home {
     width: 380px;
     border-radius: 20px;
- 
+
 
 }
-.image-card{
+
+.image-card {
     border-radius: 20px;
     width: 200px;
     display: block;
@@ -214,57 +236,66 @@ main {
     transform: translateY(-40px);
     transition: transform 0.3s ease, scale 0.3s ease;
 }
-.sectio-serv{
+
+.sectio-serv {
     margin: 0 auto;
     padding: 40px 48px;
     min-height: 500px;
 
 }
-.container-serv{
+
+.container-serv {
     text-align: center;
     margin: 0 auto 80px;
     padding: 0 48px;
 }
-.titolo-do-serv{
+
+.titolo-do-serv {
     font-size: 40px;
     font-weight: bolder;
     color: #89ABB4;
 }
-.div-cad{
+
+.div-cad {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 65px;
     place-items: center;
 
 }
-.serv-card{
+
+.serv-card {
     border-radius: 16px;
     background-color: #fff;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     transition: all 0.5s ease;
     max-width: 300px;
     position: relative;
 
 
-    &:hover{
+    &:hover {
         background-color: #9b7cac;
         color: #2d3748;
     }
 }
-.serv-card:hover .image-card{
-    transform: translateY(-40px) scale(1.06) rotate(4deg) ;
+
+.serv-card:hover .image-card {
+    transform: translateY(-40px) scale(1.06) rotate(4deg);
 }
-.div-texto-servico-card{
+
+.div-texto-servico-card {
     padding: 16px;
     text-align: center;
 }
-.h1-card-serv{
+
+.h1-card-serv {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 16px;
     text-align: center;
 }
-.p-card-serv{
+
+.p-card-serv {
     color: #89ABB4;
     transition: all 0.7 ease;
     font-size: 14px;
@@ -272,52 +303,61 @@ main {
     text-align: center;
     margin: 16px;
 }
-.serv-card:hover .p-card-serv{
+
+.serv-card:hover .p-card-serv {
     color: #fff;
 }
-.container-nav{
-   display: grid;
-   grid-template-columns: 1fr; 
-   align-items: center;
-   text-align: center;
+
+.container-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
 
 }
-.meu-endereço{
+
+.meu-endereço {
     display: flex;
     align-items: center;
     text-align: center;
     flex-direction: column-reverse;
     gap: 50px;
 }
-.h1-texto-endereço{
+
+.h1-texto-endereço {
     font-size: 35px;
     color: #fff;
 }
-.map-iframe{
-    width:700px;
+
+.map-iframe {
+    width: 700px;
     height: 350px;
     position: relative;
     bottom: 20px;
 }
-footer{
+
+footer {
     background-color: gray;
     min-height: 150px;
     padding: 5px;
-    
-    
+
+
 }
-.div-log-footer{
+
+.div-log-footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.img-logo{
+
+.img-logo {
     width: 50px;
- 
+
 
 }
-.div-log-filho{
+
+.div-log-filho {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,18 +394,20 @@ footer{
     .img-home {
         width: 320px;
     }
-    
-    .div-cad{
+
+    .div-cad {
         display: grid;
-        grid-template-columns:  1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 65px;
         place-items: center;
     }
 
-.titolo-do-serv{
-    font-size: 35px;
-}
+    .titolo-do-serv {
+        font-size: 35px;
+    }
+ 
     
+
 }
 
 @media screen and (max-width: 876px) {
@@ -396,20 +438,41 @@ footer{
         width: 280px;
 
     }
-    .titolo-do-serv{
+
+    .titolo-do-serv {
         font-size: 30px;
-   }
-} 
+    }
+    .image-carrosel {
+        height: 40vw;
+        width: 50vh;
+        padding: 5px 3px;
+        gap: 20px;
+    }
+    .carousel-item {
+     
+    
+    }
+}
+
 @media screen and (max-width: 777px) {
-    .titolo-do-serv{
+    .titolo-do-serv {
         font-size: 25px;
-   }
+    }
+    .titulo-carrossel {
+        font-size: 20px;
+    }
 }
+
 @media screen and (max-width: 679px) {
-    .titolo-do-serv{
+    .titolo-do-serv {
         font-size: 23px;
-   }
+    }
+    .carousel-item {
+        left: 26%;
+    
+    }
 }
+
 @media screen and (max-width: 643px) {
     header {
         padding: 0;
@@ -422,14 +485,29 @@ footer{
     .button-list {
         font-size: 16px;
     }
+
     .div-logo-img {
         width: 70px;
     }
-    .div-cad{
+
+    .div-cad {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 65px; 
+        gap: 65px;
     }
+    .h1-texto-endereço{
+        font-size: 30px;
+    }
+    .map-iframe {
+        width: 390px;
+        height: 280px;
+    }
+    .h1-texto-home{
+        font-size:36px;
+    }
+.h3-texto-home{
+    font-size: 21.6px;
+}
 }
 
 @media screen and (max-width: 566px) {
@@ -441,44 +519,83 @@ footer{
     .button-list {
         font-size: 13px;
     }
+
     .div-logo-img {
         width: 60px;
     }
-    .map-iframe{
-        width:310px;
+
+    .map-iframe {
+        width: 310px;
         height: 280px;
     }
-    .h1-texto-endereço{
+
+    .h1-texto-endereço {
         font-size: 30px;
     }
-    #principal{
+
+    #principal {
         font-size: 35px;
     }
+    .carousel-item {
+        left: 21%;
+    
+    }
+    .h1-texto-home{
+        font-size:25px;
+    }
+.h3-texto-home{
+    font-size: 18px;
 }
+}
+
 @media screen and (max-width: 499px) {
     .div-log a {
-        font-size: 12px;
+        font-size: 15.6px;
 
     }
 
     .button-list {
         font-size: 10px;
     }
+
     .div-logo-img {
         width: 52px;
     }
-    .map-iframe{
-        width:310px;
+
+    .map-iframe {
+        width: 310px;
         height: 280px;
     }
-    .h1-texto-endereço{
+
+    .h1-texto-endereço {
         font-size: 30px;
     }
-    #principal{
+
+    #principal {
         font-size: 35px;
     }
+    .carousel-item {
+        left: 14%;
+    
+    }
+    .titulo-carrossel{
+        font-size: large;
+    }
+    .image-carrosel {
+        height: 76vw;
+        width: 34vh;
+    }
+    .carousel-item {
+        left: 12%;
+    
+    }
+    .h1-texto-home{
+        font-size: 29px;
+    }
+.h3-texto-home{
+    font-size: 17px;
 }
-
+}
 @media screen and (max-width: 398px) {
     .div-log a {
         font-size: 15px;
@@ -488,74 +605,120 @@ footer{
     .button-list {
         font-size: 8px;
     }
-    .titolo-do-serv{
+
+    .titolo-do-serv {
         font-size: 19px;
     }
-    .map-iframe{
-        width:290px;
+
+    .map-iframe {
+        width: 290px;
         height: 280px;
     }
-    .h1-texto-endereço{
+
+    .h1-texto-endereço {
         font-size: 25px;
     }
-    #principal{
+
+    #principal {
         font-size: 30px;
     }
-    #name-footer{
+
+    #name-footer {
         font-size: 13px;
     }
+    .carousel-item {
+        left: 10%;
     
-}
-@media screen and (max-width: 376px) {
-    .div-log a {
+    }
+    .titulo-carrossel{
+        font-size: 15px;
+    }
+    .meu-endereço{
         font-size: 12px;
-
     }
-
-    .button-list {
-        font-size: 8px;
-    }
-    .titolo-do-serv{
-        font-size: 17px;
-    }
-    .map-iframe{
-        width:290px;
-        height: 280px;
-    }
-    .h1-texto-endereço{
+    .image-carrosel {
+        height: 80vw;
+        width: 40vh;
+    
+      
+    }       .h1-texto-home{
         font-size: 25px;
     }
-    #principal{
-        font-size: 30px;
-    }
-    
-
+.h3-texto-home{
+    font-size: 14px;
 }
-@media screen and (max-width: 361px) {
+}
+
+@media screen and (max-width: 376px) {
     .div-log a {
-        font-size: 12px;
+        font-size: 11px;
 
     }
 
     .button-list {
-        font-size: 7px;
+        font-size: 9px;
     }
+
+    .titolo-do-serv {
+        font-size: 17px;
+    }
+
+    .map-iframe {
+        width: 290px;
+        height: 280px;
+    }
+
+    .h1-texto-endereço {
+        font-size: 25px;
+    }
+
+    #principal {
+        font-size: 30px;
+    }
+
+    .image-carrosel {
+        height: 80vw;
+        width: 37vh;
     
-.titolo-do-serv{
-    font-size: 16px;
-}
-.map-iframe{
-    width:290px;
-    height: 280px;
-}
-.h1-texto-endereço{
-    font-size: 25px;
-}
-#principal{
-    font-size: 30px;
-}
+    } 
+
 
 }
+
+@media screen and (max-width: 361px) {
+    .div-log a {
+        font-size: 9.1px;
+
+    }
+
+    .button-list {
+        font-size: 4.5px;
+    }
+
+    .titolo-do-serv {
+        font-size: 16px;
+    }
+
+    .map-iframe {
+        width: 290px;
+        height: 280px;
+    }
+
+    .h1-texto-endereço {
+        font-size: 25px;
+    }
+
+    #principal {
+        font-size: 30px;
+    }
+    .h1-texto-home{
+        font-size: 20px;
+    }
+.h3-texto-home{
+    font-size: 15px;
+}
+}
+
 @media screen and (max-width: 163px) {
     .div-log a {
         font-size: 4px;
@@ -565,21 +728,24 @@ footer{
     .button-list {
         font-size: 1px;
     }
+
     .img-home {
         width: 120px;
 
     }
+
     .div-logo-img {
         width: 10px;
     }
+
     .h1-text-home {
         font-size: 1px;
-      
-    
+
+
     }
-    
+
     .h3-texto-home {
         padding: 10px;
-    
+
     }
 }
