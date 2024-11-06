@@ -2,15 +2,17 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -19,12 +21,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="./img/nay.des.png-removebg-preview.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <title>Naiely Monteiro|NAILS DESIGNER</title>
 </head>
 
 <body>
-    <div class="mascara-formulario"></div>
+   
+    <div class="mascara-do-form" onclick="desapareceFormulario()"></div>
     <header>
         <div class="container-header">
             <div class="div-log">
@@ -36,11 +40,11 @@
 
             <div class="div-list">
                 <ul class="menu-list">
-                    <li> <a href="#" class="menu-link">Home</a> </li>
-                    <li> <a href="#" class="menu-link">Serviços</a> </li>
-                    <li> <a href="#" class="menu-link">Sobre</a> </li>
+                    <li> <a href="#sobre" class="menu-link">Sobre</a> </li>
+                    <li> <a href="#serviço" class="menu-link">Serviços</a> </li>
+                    <li> <a href="#endereço" class="menu-link">Endereço</a> </li>
                 </ul>
-                <button class="button-list">
+                <button onclick="apareceFormulario()" class="button-list">
                     Agenda um Horário
 
                 </button>
@@ -50,7 +54,29 @@
         </div>
 
     </header>
+<form class="fomulario"   
+action="https://formcarry.com/s/JyiNAWqfW-W"
+method="POST"
+enctype="multipart/form-data"
+>
+    
+<label class="form">Nome <input type="text" placeholder="Seu nome" name="nome"></label>
+<label class="form">WhatsApp<input type="number" placeholder="Seu Numero" name="telefone"></label>
+<label class="form">Data<input type="date" name="data"></label>
+<label class="form">Horário<input type="time" name="horarios"></label>
+<label><input type="radio" name="Polygel">Polygel</label>
+<label><input type="radio" name="Banho em gel">Banho em gel</label>
+<label><input type="radio"  name="Esmaltação em Gel">Esmaltação em Gel</label>
+<label><input type="radio"  name="Postiça Realista">Postiça Realista</label>
+<label><input type="radio"  name="Manicure">Manicure</label>
+<label><input type="radio" name="Pedicure" >Pedicure</label>
 
+<button type="submit" class="My-button">Finalizar</button>
+
+
+
+
+</form>
   <aside>
     <div class="caixa-video">
         <video src="./img/api_thumb_600 (1).mp4" autoplay muted loop alt="vide0-paleta-de-cores"></video>
@@ -59,13 +85,14 @@
     <a href="https://wa.me/5544997415942?text=Ol%C3%A1,%20quero%20marcar%20um%20hor%C3%A1rio!">
         <img class="img-logo posicionado" src="./img/whatsapp-logo-png-0.png" alt="logo-whatsapp">
     </a>
-    <button class="button-list agendamento ">
+    <button onclick="apareceFormulario()" class="button-list agendamento ">
         💅
 
     </button>
 </aside>
-    <main>
-        <div class="container-home">
+    <main id="sobre">
+        <div class="container-home" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
             <div class="grid">
                 <div class="div-texto-home">
                     <h1 class="h1-texto-home">
@@ -82,7 +109,7 @@
                         Manicure e Pedicure: Cuidados completos para deixar suas mãos e pés impecáveis.
                     </h3>
                     <div>
-                        <button class="button-home"> Agenda um Horário</button>
+                        <button onclick="apareceFormulario()" class="button-home"> Agenda um Horário</button>
                     </div>
 
                 </div>
@@ -96,8 +123,8 @@
         </div>
     </main>
 
-    <section class="sectio-serv">
-        <div class="container-serv">
+    <section class="sectio-serv" id="serviço">
+        <div class="container-serv" data-aos="fade-up" data-aos-delay="100">
             <h1 class="titolo-do-serv">Naiely Monteiro | NAILS DESIGNER
                 <br>
                 <br><span id="principal">Serviços</span>
@@ -106,7 +133,7 @@
         </div>
 
         <div class="div-cad">
-            <div class="serv-card">
+            <div class="serv-card" data-aos="fade-up" data-aos-delay="350">
                 <div class="div-cad-img"> <!-- 01 -->
                     <img class="image-card" src="./img/polygel-nay.jpg" alt="unha-em-polygel">
                 </div>
@@ -116,7 +143,7 @@
                 </div>
             </div>
 
-            <div class="serv-card">
+            <div class="serv-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="div-cad-img"> <!-- 02 -->
                     <img class="image-card" src="./img/banho-de-gel-nay.jpg" alt="unha-banhada-em-gel">
                 </div>
@@ -127,7 +154,7 @@
                 </div>
             </div>
 
-            <div class="serv-card">
+            <div class="serv-card" data-aos="fade-up" data-aos-delay="500">
                 <div class="div-cad-img"> <!-- 03 -->
                     <img class="image-card" src="./img/esmalte-em-gel-nay.jpg" alt="unha-em-gel">
                 </div>
@@ -137,7 +164,7 @@
                 </div>
             </div>
 
-            <div class="serv-card">
+            <div class="serv-card" data-aos="fade-up" data-aos-delay="350">
                 <div class="div-cad-img"> <!-- 04 -->
                     <img class="image-card" src="./img/postiça-realista-nay02.jpg" alt="unha-postiça-realista">
                 </div>
@@ -148,7 +175,7 @@
                 </div>
             </div>
 
-            <div class="serv-card">
+            <div class="serv-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="div-cad-img"> <!-- 05 -->
                     <img class="image-card" src="./img/manicure-nay.jpg" alt="image-manicure">
                 </div>
@@ -158,7 +185,7 @@
                 </div>
             </div>
 
-            <div class="serv-card">
+            <div class="serv-card" data-aos="fade-up" data-aos-delay="500">
                 <div class="div-cad-img"> <!-- 06 -->
                     <img class="image-card" src="./img/pedicule-nay.jpg" alt="image-pedicure">
                 </div>
@@ -239,7 +266,8 @@
 
 
 
-    <nav class="container-nav">
+    <nav class="container-nav" id="endereço" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
         <div class="container-serv">
             <h1 class="titolo-do-serv" id="principal">Endereço</h1>
         </div>
@@ -285,6 +313,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration:1200
+            });
+          </script>
 </body>
+<script src="script.js"></script>
 
 </html>

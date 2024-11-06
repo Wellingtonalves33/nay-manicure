@@ -10,6 +10,9 @@ body {
     height: 100vh;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 
 header {
     background-color: gray;
@@ -18,13 +21,82 @@ header {
     display: grid;
     align-items: center;   
 }
+#button-click{
+    display: flex;
+    flex-direction: column;
+   row-gap: 6px;
 
+    border: 0;
+    background: transparent;
+    margin-top: 10px;
+}
+#button-click span{
+width: 30px;
+height: 2px;
+border-radius: 10px;
+background: #2d3748;
+}
+
+#button-click.active span:nth-child(2){
+    opacity: 0;
+}
 .caixa-video {
     position: fixed;
     z-index: -1;
     top: 0;
 }
+.mascara-do-form{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000008c;
+    backdrop-filter: blur(3px);
+    z-index: 4;
+}
+.fomulario{
+    z-index: 5;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10px;
 
+    padding: 15px;
+    left: -450px;
+    border-radius: 5px;
+    gap: 2px;
+    transition: left 1s ease-in-out;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #fff;
+}
+.My-button{
+    background: #9b7cac;
+    color: #ffffffb3;
+    border:none;
+    border-radius: 10px;
+    padding: 4px 10px;
+    
+    &:hover{
+        color: #89ABB4;
+        background-color: #2d3748;
+        opacity: 0.8;
+    }
+    &:active{
+        opacity: 0.4;
+    }
+}
+input{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+}
 video {
     min-height: 100%;
     min-width: 100%;
@@ -59,7 +131,9 @@ video {
     letter-spacing: 0.05em;
     padding: 0 20px 5px 0;
 }
-
+.div-list a{
+    text-decoration: none;
+}
 .div-logo-img {
     width: 99px;
 }
@@ -124,19 +198,46 @@ video {
     flex-direction: row;
     list-style-type: none;
     gap: 16px;
-}
-
-.menu-link {
     text-decoration: none;
-    color: #ffffffb3;
-    display: inline-block;
-    font-size: 20px;
 }
 
-.menu-link:hover {
-    color: white;
-    transition-duration: 400ms;
-    font-size: 25px;
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    transition: .2s;
+    display: block;
+    position: relative;
+    padding: 8px;
+}
+ul:hover li a{
+    opacity: .3;
+  
+}
+
+ul li a:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    color: #fff;
+}
+ul li a::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    z-index: -1;
+ border-radius: 15px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition:transform .2s;
+}
+ul li a:hover::before{
+    transform-origin: left;
+    transform: scale(1);
+    transition:transform .2s;
 }
 
 .mascara {
